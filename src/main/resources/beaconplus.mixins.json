@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.omicron.beaconplus.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "beaconplus.refmap.json",
+  "mixins": [
+    "BeaconBlockEntityMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
