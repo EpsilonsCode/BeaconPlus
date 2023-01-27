@@ -110,7 +110,7 @@ public abstract class BeaconBlockEntityMixin extends BlockEntity implements Menu
             int j = (9 + lvl * 2) * 20;
             AABB aabb = (new AABB(pos)).inflate(d0).expandTowards(0.0D, (double)level.getHeight(), 0.0D);
             if(Config.SHOULD_WORT_AT_ALL_Y_LEVELS.get())
-                aabb = aabb.setMinY(0.0D);
+                aabb = aabb.setMinY(-64.0D);
             List<Player> list = level.getEntitiesOfClass(Player.class, aabb);
             for(Player player : list) {
                 player.addEffect(new MobEffectInstance(primaryEffect, j, i, true, true));
